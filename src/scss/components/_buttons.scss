@@ -65,12 +65,12 @@
 		.menu-btn__burger {
 			&::before {
 				transform: rotate(-360deg);
-				background-color: #ffffff;
+				background-color: #939393;
 			}
 
 			&::after {
 				transform: rotate(360deg);
-				background-color: #ffffff;
+				background-color: #939393;
 			}
 		}
 	}

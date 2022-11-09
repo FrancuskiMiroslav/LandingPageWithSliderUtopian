@@ -13,21 +13,8 @@
 			name="description"
 			content="Portfolio for frontend web developer projects"
 		/>
-		<link
-			rel="preload"
-			href="./assets/fonts/Lato-Regular.ttf"
-			as="font"
-			type="font/ttf"
-			crossorigin
-		/>
+		<link href="https://fonts.cdnfonts.com/css/assistant" rel="stylesheet">
 
-		<link
-			rel="preload"
-			href="./assets/fonts/Lato-Bold.ttf"
-			as="font"
-			type="font/ttf"
-			crossorigin
-		/>
 		<link
 			rel="shortcut icon"
 			type="image/svg+xml"
@@ -38,12 +25,170 @@
 	</head>
 	<body>
 		<div class="preload">
-			<img src="./assets/images/preloader.gif" alt="loading-image" />
+			<img src="./assets/images/TNTlogo.png" alt="loading-image" />
 		</div>
 
-		<header class="app">
+		<main class="main">
+			<section class="main-content-left">
+				<header class="header">
+					<div class="nav-container" id="nav-container">
+						<div class="menu-btn" id="menu-btn">
+							<div class="menu-btn__burger"></div>
+						</div>
+						<div class="logo" id="logo">
+							<a href="#">
+								<img src="./assets/images/TNTlogo.png" alt="logo image" class="logo__img" />
+							</a>
+						</div>
+						<nav class="nav" id="nav">
+							<ul class="nav__list">
+								<li class="nav__list-item">
+									<a href="#" class="nav__list-link">About</a>
+								</li>
+								<li class="nav__list-item">
+									<a href="#" class="nav__list-link">Services</a>
+								</li>
+								<li class="nav__list-item">
+									<a href="#" class="nav__list-link">Portfolio</a>
+								</li>
+								<li class="nav__list-item">
+									<a href="#" class="nav__list-link">Team</a>
+								</li>
+								<li class="nav__list-item">
+									<a href="#" class="nav__list-link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</header>
 
-		</header>
+				<div class="main-content-left__wrapper">
+					<div class="main-content-left__text">
+						<h3 class="main-content-left__text-sub-title">
+							Hello World!
+						</h3>
+						<h1 class="main-content-left__text-main-title">
+							We are creative agency. We build digital work that you will love!
+						</h1>
+					</div>
+	
+					<div class="main-content-left__button-wrapper">
+						<button class="main-content-left__button button">
+							Explore our portfolio
+						</button>
+					</div>
+	
+					<div class="main-content-left__boxes">
+						<div class="main-content-left__box">
+							<img src="./assets/images/svg/Web-design-icon.svg" alt="web design" class="main-content-left__img">
+	
+							<h2 class="main-content-left__box-title">
+								Web Design Project
+							</h2>
+	
+							<p class="main-content-left__box-text">
+								Sed ut perspiciatis unde omni iste natus error sit volunteer accusantum doloremque.
+							</p>
+
+							<a href="#" class="main-content-left__box-link">
+								<img src="./assets/images/svg/Arrow-right-red.svg" alt="arrow right red" class="main-content-left__box-link-img">
+							</a>
+						</div>
+	
+						<div class="main-content-left__box">
+							<img src="./assets/images/svg/Planning-icon.svg" alt="digital artwork" class="main-content-left__img">
+	
+							<h2 class="main-content-left__box-title">
+								Digital Artwork
+							</h2>
+	
+							<p class="main-content-left__box-text">
+								Sed ut perspiciatis unde omni iste natus error sit volunte.
+							</p>
+
+							<a href="#" class="main-content-left__box-link">
+								<img src="./assets/images/svg/Arrow-right-blue.svg" alt="arrow right blue" class="main-content-left__box-link-img">
+							</a>
+						</div>
+	
+						<div class="main-content-left__box">
+							<img src="./assets/images/svg/Web-icon.svg" alt="web icon" class="main-content-left__img">
+	
+							<h2 class="main-content-left__box-title">
+								Website Development
+							</h2>
+	
+							<p class="main-content-left__box-text">
+								Sed ut perspiciatis unde omni iste natus error sit volunteer accusantum doloremque. Ut perspiciatis unde omni iste natus error sit volunteer accusantum doloremque.
+							</p>
+
+							<a href="#" class="main-content-left__box-link">
+								<img src="./assets/images/svg/Arrow-right-green.svg" alt="arrow right green" class="main-content-left__box-link-img">
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="main-content-right">
+				<div class="carousel" id="carousel">
+					<div class="carousel__hero">
+						<div class="carousel__hero-img">
+							<picture class="weather-card__bg" >
+								<!-- mobile image -->
+								<source
+								srcset="https://picsum.photos/390/300"
+								media="all and (max-width:576px)"
+								>
+								<!-- tablet small image -->
+								<source
+								srcset="https://picsum.photos/600/630"
+								media="all and (min-width:577px) and (max-width:990px)"
+								>
+								<!-- tablet image -->
+								<source
+								srcset="https://picsum.photos/700/740"
+								media="all and (min-width:991px) and (max-width:1199px)"
+								>
+								<!-- desktop image -->
+								<source
+								srcset="https://picsum.photos/1920/2040"
+								media="all and (min-width:1200px)"
+								>
+								<!-- default image as a fallback -->
+								<img src="https://picsum.photos/1920/2040"
+								class="carousel__image"
+								alt="Alt"
+								loading="eager">
+					  		</picture>
+						</div>
+						<div class="carousel__btns">
+						<button class="carousel__btn btn-left" id="prev">
+						</button>
+
+						<button class="carousel__btn btn-right" id="next">
+						</button>
+					</div>
+
+					<div class="carousel__content">
+						<p class="carousel__desc">
+							Artwork project
+						</p>
+
+						<h2 class="carousel__title">
+							Enjoy the space
+						</h2>
+					</div>
+
+					<div class="carousel__dots">
+						<button class="carousel__dot active"></button>
+						<button class="carousel__dot"></button>
+						<button class="carousel__dot"></button>
+					</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
 		<!-- 	<script>
 			document.addEventListener('DOMContentLoaded', function () {

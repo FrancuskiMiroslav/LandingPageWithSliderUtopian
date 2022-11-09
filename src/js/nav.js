@@ -1,13 +1,21 @@
 document.addEventListener('DOMContentLoaded', function () {
-	const topNav = document.getElementById('top-nav');
+	const menuBtn = document.getElementById('menu-btn');
+	const nav = document.getElementById('nav');
+	const navContainer = document.getElementById('nav-container');
+	const logo = document.getElementById('logo');
 
 	window.addEventListener('scroll', (e) => {
 		if (document.documentElement.scrollTop > 0) {
-			topNav.classList.add('sticky');
-			btnScrollToTop.style.opacity = 1;
+			navContainer.classList.add('sticky');
 		} else {
-			topNav.classList.remove('sticky');
-			btnScrollToTop.style.opacity = 0;
+			navContainer.classList.remove('sticky');
 		}
+	});
+
+	menuBtn.addEventListener('click', (e) => {
+		menuBtn.classList.toggle('clicked');
+		nav.classList.toggle('show');
+		navContainer.classList.toggle('overlay');
+		logo.classList.toggle('hide');
 	});
 });
