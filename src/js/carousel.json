@@ -1,0 +1,22 @@
+{
+	"slides": [
+		{
+			"desc": "Enjoy our hot summer deals",
+			"path": "./assets/images/carousel/slide1.jpg",
+			"pathTab": "./assets/images/carousel/slide1-tab.jpg",
+			"pathMob": "./assets/images/carousel/slide1-mob.jpg"
+		},
+		{
+			"desc": "Slide 2",
+			"path": "./assets/images/carousel/slide2.jpg",
+			"pathTab": "./assets/images/carousel/slide2-tab.jpg",
+			"pathMob": ""
+		},
+		{
+			"desc": "Slide 3",
+			"path": "./assets/images/carousel/slide3.jpg",
+			"pathTab": "./assets/images/carousel/slide3-tab.jpg",
+			"pathMob": ""
+		}
+	]
+}
