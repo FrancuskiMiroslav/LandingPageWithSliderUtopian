@@ -132,59 +132,10 @@
 
 			<section class="main-content-right">
 				<div class="carousel" id="carousel">
-					<div class="carousel__hero">
-						<div class="carousel__hero-img">
-							<picture class="weather-card__bg" >
-								<!-- mobile image -->
-								<source
-								srcset="https://picsum.photos/390/300"
-								media="all and (max-width:576px)"
-								>
-								<!-- tablet small image -->
-								<source
-								srcset="https://picsum.photos/600/630"
-								media="all and (min-width:577px) and (max-width:990px)"
-								>
-								<!-- tablet image -->
-								<source
-								srcset="https://picsum.photos/700/740"
-								media="all and (min-width:991px) and (max-width:1199px)"
-								>
-								<!-- desktop image -->
-								<source
-								srcset="https://picsum.photos/1920/2040"
-								media="all and (min-width:1200px)"
-								>
-								<!-- default image as a fallback -->
-								<img src="https://picsum.photos/1920/2040"
-								class="carousel__image"
-								alt="Alt"
-								loading="eager">
-					  		</picture>
-						</div>
-						<div class="carousel__btns">
-						<button class="carousel__btn btn-left" id="prev">
-						</button>
-
-						<button class="carousel__btn btn-right" id="next">
-						</button>
-					</div>
-
-					<div class="carousel__content">
-						<p class="carousel__desc">
-							Artwork project
-						</p>
-
-						<h2 class="carousel__title">
-							Enjoy the space
-						</h2>
-					</div>
-
 					<div class="carousel__dots">
-						<button class="carousel__dot active"></button>
-						<button class="carousel__dot"></button>
-						<button class="carousel__dot"></button>
-					</div>
+						<button class="carousel__dot" data-for-dot="0"></button>
+						<button class="carousel__dot" data-for-dot="1"></button>
+						<button class="carousel__dot" data-for-dot="2"></button>
 					</div>
 				</div>
 			</section>

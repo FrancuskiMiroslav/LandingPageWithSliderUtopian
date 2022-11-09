@@ -1,0 +1,25 @@
+{
+	"slides": [
+		{
+			"title": "Web Design Project",
+			"desc": "Artwork project",
+			"path": "https://picsum.photos/1920/2040",
+			"pathTab": "https://picsum.photos/700/740",
+			"pathMob": "https://picsum.photos/600/630"
+		},
+		{
+			"title": "Web Design Project NUMBER 2",
+			"desc": "Artwork project slide number 2",
+			"path": "https://picsum.photos/1920/2040",
+			"pathTab": "https://picsum.photos/700/740",
+			"pathMob": "https://picsum.photos/600/630"
+		},
+		{
+			"title": "Web Design Project number 3",
+			"desc": "Artwork project slide number 3",
+			"path": "https://picsum.photos/1920/2040",
+			"pathTab": "https://picsum.photos/700/740",
+			"pathMob": "https://picsum.photos/600/630"
+		}
+	]
+}

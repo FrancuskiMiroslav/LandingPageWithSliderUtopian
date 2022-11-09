@@ -1,0 +1,108 @@
+.carousel {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+
+	&__slide {
+		display: flex;
+		transform: translateX(100%);
+		transition: all 0.5s ease-in-out, opacity 0.5s linear;
+		opacity: 0;
+		overflow: hidden;
+		height: 0;
+
+		@include breakpoint-max(880) {
+			flex-direction: column;
+
+			& > div {
+				width: 100%;
+			}
+		}
+
+		&.active {
+			opacity: 1;
+			transform: translateX(0%);
+			height: inherit;
+
+			.carousel__hero {
+				transform: translateX(0%);
+			}
+
+			.carousel__title {
+				transform: translateX(0%);
+			}
+
+			.carousel__desc {
+				transform: translateX(0%);
+			}
+		}
+	}
+
+	&__hero {
+		position: relative;
+		transition: all 0.4s linear 0.5s;
+		transform: translateX(-100%);
+	}
+
+	&__hero-img {
+		height: auto;
+	}
+
+	&__hero-img-src {
+		width: 100%;
+		max-width: 100%;
+		height: inherit;
+		display: block;
+	}
+
+	&__content {
+		width: 41.6%;
+		padding: 6%;
+
+		@include breakpoint-max(1100) {
+			padding: 3%;
+		}
+
+		@include breakpoint-max(880) {
+			padding: 70px 30px;
+		}
+	}
+
+	&__title {
+		font-size: 32px;
+		margin-bottom: 5.2%;
+		transition: all 0.5s linear 0.5s;
+		transform: translateX(200%);
+		@include fluid-typo(375px, 1440px, 26px, 32px);
+	}
+
+	&__desc {
+		font-size: 12px;
+		line-height: 20px;
+		color: $primaryClr;
+		margin-bottom: 6.7%;
+		transition: all 0.7s linear 0.5s;
+		transform: translateY(-200%);
+		@include fluid-typo(375px, 1440px, 10px, 12px);
+	}
+
+	&__button-open {
+		@include fluid-typo(375px, 1440px, 10px, 16px);
+	}
+
+	&__btns {
+		position: absolute;
+		width: 19%;
+		bottom: 0;
+		right: -19%;
+		display: flex;
+		align-items: center;
+		justify-content: end;
+
+		@include breakpoint-max(880) {
+			right: 0;
+			min-height: 60px;
+			width: auto;
+		}
+	}
+}
