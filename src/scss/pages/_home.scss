@@ -2,10 +2,12 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    margin-top: 60px;
+    min-height: 100vh;
+    height: 100%;
 
     @include breakpoint-max(1200) {
         flex-wrap: wrap;
+        height: auto;
     }
 
     @include breakpoint-max(600) {
@@ -16,31 +18,40 @@
 .main-content-left{
     width: 100%;
     margin-left: 30px;
-    position: relative;
+    margin-top: 60px;
+    max-height: calc(100% - 60px);
+    height: 100%;
+    overflow-y: auto;
+    @include breakpoint-max(1200) {
+        overflow-y: hidden;
+        max-height: initial;
+        height: 100%;
+        margin-top: 80px;
+    }
 
     &::before, &::after {
         position: absolute;
         width: 3px;
         content: "";
+        @include breakpoint-max(1200) {
+            display: none;
+        }
     }
 
     &::before {
-        left: 0;
+        left: 30px;
         bottom: 0;
         width: 3px;
         background: #939393;
-        height: 95%;
+        height: 86%;
     }
 
     &::after {
-        right: 0;
-        top: 0;
+        right: 40%;
+        top: 60px;
         width: 30%;
         background: #939393;
         height: 3px;
-        @include breakpoint-max(600) {
-            width: 100%;
-        }
     }
 
     @include breakpoint-max(600) {
@@ -148,9 +159,15 @@
 
 .main-content-right{
     width: 100%;
+    margin-top: 60px;
+    max-height: calc(100% - 60px);
+    height: 100%;
+    background: #fff;
+    position: relative;
 
     .carousel {
         position: relative;
+        height: inherit;
 
         &__content {
             position: absolute;
