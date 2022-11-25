@@ -1,4 +1,5 @@
-# Please follow the rules below:
+# Please follow the rules below: 
+# You will have 4 hours to complete the following tasks:
 
 1. Code the design in HTML and CSS (make sure to use Semantic HTML and proper attributes). We are open to you using a framework if you usually do to set up your code, feel free to proceed as you usually would.
 
